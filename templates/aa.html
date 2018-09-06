@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hello wanghuan</h3>
+{% for file in files %}
+    <div><a href="/static/img/{{ file }}">试题{{ forloop.counter }}</a>   </div>
+{% endfor %}
+</body>
+</html>

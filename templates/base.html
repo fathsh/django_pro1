@@ -46,9 +46,9 @@
         <li class="layui-nav-item layui-nav-itemed">
           <a class="" href="javascript:;">所有商品</a>
           <dl class="layui-nav-child">
-            <dd><a href="/test/">列表一</a></dd>
-            <dd><a href="javascript:;">列表二</a></dd>
-            <dd><a href="javascript:;">列表三</a></dd>
+            <dd><a href="/form/">FORM</a></dd>
+            <dd><a href="/tab">tab</a></dd>
+            <dd><a href="/test">test</a></dd>
             <dd><a href="">超链接</a></dd>
           </dl>
         </li>
@@ -83,10 +83,16 @@
 <script src="/static/layui/layui.js"></script>
 <script>
 //JavaScript代码区域
-layui.use('element', function(){
-  var element = layui.element;
-
+layui.use(['element','form','layer'], function() {
+    var element = layui.element;
+    var form = layui.form;
+    var layer = layui.layer;
+    form.render();
 });
 </script>
+          {% block script %}
+        {# 预留区域 #}
+        {% endblock script%}
+
 </body>
 </html>
